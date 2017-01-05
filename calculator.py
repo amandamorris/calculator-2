@@ -16,8 +16,8 @@ def parse_expression():
     while True:
         expression = raw_input("> ")
         tokens = expression.split(" ")
-    #    print tokens
-    #    print len(tokens)
+        number_list = tokens[1:]
+        #print number_list
 
         first_token = tokens[0]
 
@@ -48,9 +48,9 @@ def parse_expression():
                 second_number = int(tokens[2])
 
                 if first_token == "+":
-                    print add(first_number, second_number)
+                    print add(number_list)
                 elif first_token == "-":
-                    print subtract(first_number, second_number)
+                    print subtract(number_list)
                 elif first_token == "*":
                     print multiply(first_number, second_number)
                 elif first_token == "/":

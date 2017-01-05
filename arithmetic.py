@@ -1,10 +1,17 @@
-def add(num1, num2):
-    """Return the sum of two numbers"""
-    return num1 + num2
+def add(number_list):
+    """Return the sum of numbers"""
+    #number = ()
+    summation = 0
+    for num in number_list:
+        summation = summation + int(num)
+    return summation
 
-def subtract(num1, num2):
+def subtract(number_list):
     """Return the difference of two numbers"""
-    return num1 - num2
+    difference = int(number_list[0]) * 2
+    for num in number_list:
+        difference = difference - int(num)
+    return difference
 
 def multiply(num1, num2):
     """Return the product of two numbers"""
