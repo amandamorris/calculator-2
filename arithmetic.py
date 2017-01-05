@@ -7,27 +7,37 @@ def add(number_list):
     return summation
 
 def subtract(number_list):
-    """Return the difference of two numbers"""
+    """Return the difference of numbers"""
     difference = int(number_list[0]) * 2
     for num in number_list:
         difference = difference - int(num)
     return difference
 
-def multiply(num1, num2):
-    """Return the product of two numbers"""
-    return num1 * num2
+def multiply(number_list):
+    """Return the product of numbers"""
+    product = 1
+    for num in number_list:
+        product = product * int(num)
+    return product
 
-def divide(num1, num2):
-    """Return the quotient of two numbers as a float"""
-    return float(num1) / float(num2)
+def divide(number_list):
+    """Return the quotient of numbers as a float"""
+    dividor = float(number_list[0]) ** 2
+    for num in number_list:
+        dividor = dividor / float(num)
+    return dividor
 
-def square(num):
-    """Return the square of a number"""
-    return num ** 2
+def square(number_list):
+    """Return the square of a list of numbers"""
+    for num in number_list:
+        print int(num) ** 2
+    return ""
 
-def cube(num):
-    """Return the cube of a number"""
-    return num ** 3
+def cube(number_list):
+    """Return the cube of a list of numbers"""
+    for num in number_list:
+        print int(num) ** 3
+    return ""
 
 def power(num, exponent):
     """Return num raised to the power of exponent"""

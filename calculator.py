@@ -24,41 +24,41 @@ def parse_expression():
         if first_token == 'q':
             return
 
-        if len(tokens) == 2:
-            try:
-                first_number = int(tokens[1])
+        # if len(tokens) == 2:
+        #     try:
+        #         first_number = int(tokens[1])
 
-                if first_token == "square":
-                    print square(first_number)
-                elif first_token == "cube":
-                    print cube(first_number)
-                else:
-                    print "Are you trying to square or cube? Try again."
+        #         if first_token == "square":
+        #             print square(first_number)
+        #         elif first_token == "cube":
+        #             print cube(first_number)
+        #         else:
+        #             print "Are you trying to square or cube? Try again."
 
-            except ValueError:
-                print "That was not a valid input"
-            except TypeError:
-                print "We want you to enter an operator and two numbers."
-            except IndexError:
-                print "We want you to enter an operator and two numbers."
+        #     except ValueError:
+        #         print "That was not a valid input"
+        #     except TypeError:
+        #         print "We want you to enter an operator and two numbers."
+        #     except IndexError:
+        #         print "We want you to enter an operator and two numbers."
 
         else:
             try:
-                first_number = int(tokens[1])
-                second_number = int(tokens[2])
+                #first_number = int(tokens[1])
+                #second_number = int(tokens[2])
 
                 if first_token == "+":
                     print add(number_list)
                 elif first_token == "-":
                     print subtract(number_list)
                 elif first_token == "*":
-                    print multiply(first_number, second_number)
+                    print multiply(number_list)
                 elif first_token == "/":
-                    print divide(first_number, second_number)
+                    print divide(number_list)
                 elif first_token == "square":
-                    print square(first_number)
+                    print square(number_list)
                 elif first_token == "cube":
-                    print cube(first_number)
+                    print cube(number_list)
                 elif first_token == "pow":
                     print power(first_number, second_number)
                 elif first_token == "mod":
